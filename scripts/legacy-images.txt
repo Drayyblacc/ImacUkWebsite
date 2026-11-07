@@ -31,3 +31,6 @@ bishops10.webp whatsapp-image-2026-02-07-at-10.41.52-1-NycPrIaE7IaIoMsI.jpeg
 archbishop2.webp whatsapp-image-2026-02-09-at-09.03.13-A8qMouXEVFLygj2M.jpeg
 strategic.webp screenshot-2026-02-03-at-2.04.00-pm-CvslJ3Fl7rMxSODO.png
 nations.webp banner1ew-azg8jzrryes5zgyx-tWKXUV44PCWKigwY.jpeg
+# YouTube Shorts thumbnails for the home page video grid
+yt-2NbVj_9apWQ.webp https://i.ytimg.com/vi/2NbVj_9apWQ/oardefault.jpg|https://i.ytimg.com/vi/2NbVj_9apWQ/maxresdefault.jpg|https://i.ytimg.com/vi/2NbVj_9apWQ/hqdefault.jpg
+yt-LWjSOFI1v84.webp https://i.ytimg.com/vi/LWjSOFI1v84/oardefault.jpg|https://i.ytimg.com/vi/LWjSOFI1v84/maxresdefault.jpg|https://i.ytimg.com/vi/LWjSOFI1v84/hqdefault.jpg

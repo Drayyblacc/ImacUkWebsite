@@ -267,6 +267,158 @@ DC.register('WhoWeAre', (function(){ class Component extends DCLogic {
   }
 }
 return Component; })());
+DC.register('Archbishop', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
+DC.register('Chaplaincy', (function(){ class Component extends DCLogic {
+  renderVals() {
+    const m = [
+      ['Understanding Chaplaincy in Today’s World', 'What chaplaincy is and where it serves today.'],
+      ['Caring for the Whole Person', 'Supporting people who are religious, spiritual but not religious, or non-religious.'],
+      ['Becoming a Reflective and Resilient Chaplain', 'Reflection, supervision, journaling and self-care.'],
+      ['Learning Through Real Experience', 'A supervised pastoral placement.'],
+      ['Ethics, Responsibility and Professional Integrity', 'Confidentiality, safeguarding, informed consent and end-of-life care.'],
+      ['Communicating with Compassion', 'Listening and speaking well in the moments that matter.']
+    ];
+    return {
+      modules: m.map((x, i) => ({ n: String(i + 1), t: x[0], d: x[1] })),
+      audience: ['Those sensing a call to chaplaincy','Faith leaders','Professionals in care, education and community roles','Anyone wanting to grow listening and pastoral skills']
+    };
+  }
+}
+return Component; })());
+DC.register('Ecclesiastical', (function(){ class Component extends DCLogic {
+  renderVals() {
+    const t = ['Spiritual Oversight and Doctrinal Integrity','Moral Accountability and Ethical Governance','Pastoral Care and Restoration','Oversight of Leadership Appointments and Discipline','Protection of the Organisation’s Reputation and Witness','Unity, Order and Spiritual Alignment','Advisory Role to the Executive Council'];
+    return { areas: t.map((x, i) => ({ n: '0' + (i + 1), t: x })) };
+  }
+}
+return Component; })());
+DC.register('CollegeOfBishops', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
+DC.register('Missions', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
+DC.register('Awards', (function(){ class Component extends DCLogic {
+  renderVals() { return { items: [1, 2, 3, 4, 5, 6] }; }
+}
+return Component; })());
+DC.register('AnnualReports', (function(){ class Component extends DCLogic {
+  renderVals() { return { reports: ['[YEAR]', '[YEAR]', '[YEAR]'] }; }
+}
+return Component; })());
+DC.register('Safeguarding', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
+DC.register('Team', (function(){ class Component extends DCLogic {
+  renderVals() {
+    const m = (a) => a.map(([n, r]) => ({ n, r }));
+    return {
+      global: m([
+        ['Archbishop Dr. Joel Oluwafemi', 'Presiding Archbishop'],
+        ['Bishop Elect Ebenezer Jojo Annan', 'Global President'],
+        ['Rev. Stephen Anning', 'Mission Coordinator, Office of the Founder'],
+        ['Pastor Abena Berko', 'Worship Director'],
+        ['Rabbi Divine Dove', 'Chairman, Ecclesiastical Board'],
+        ['Bishop Esy Oluwafemi', 'IMAC Global Women Director'],
+        ['Bishop Ebenezer O. Oyedeji', 'General Secretary'],
+        ['Rev. Ruth Mutanda', 'Secretary General'],
+        ['Rev. Richard Hawkins', 'Global Vice President, Standard and Report Director'],
+        ['Bishop Elect Wemimo Babasola', 'Liaison Director'],
+        ['Rev. Solomon Igimeh', 'DV President']
+      ]),
+      national: m([
+        ['Apostle Dr Joseph Bempah', 'IMAC USA Director'],
+        ['Apostle Emmanuel Essien', 'USA National President'],
+        ['Apostle Titus Ajayi', 'IMAC USA Vice President'],
+        ['Rev. Monica Henry', 'USA DVP'],
+        ['Apostle Steve Sr. Nsubuga', 'USA Mission Director'],
+        ['Pastor Bright Atta Bempah', 'Canada Director'],
+        ['Apostle Cornelius Babalola', 'Canada, Caribbean and South America'],
+        ['Apostle Eneogwe Innocent Emmanuel', 'National President, IMAC Nigeria'],
+        ['Rev. Nathan F. Mahteh, Sr.', 'IMAC Liberia National President'],
+        ['Pastor Keolebogile France', 'Botswana National President'],
+        ['Pastor Wilfredo F. Faunillan', 'Philippines National President'],
+        ['Pastor Jerry Ramada', 'Philippines Vice President'],
+        ['Pastor Abraham Pattem', 'IMAC India National President'],
+        ['Pastor Jayapaul Vollala', 'India National Vice President'],
+        ['Pastor David Chan', 'Hong Kong National President'],
+        ['Pastor Taz Labin', 'Pakistan']
+      ])
+    };
+  }
+}
+return Component; })());
+DC.register('Partners', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
+DC.register('WorkForce', (function(){ class Component extends DCLogic {
+  renderVals() {
+    const d = [['Benin Republic',100],['Pakistan',200],['United Kingdom',100],['Tanzania',100],['Philippines',100],['Burundi',100],['Cameroon',100],['Botswana',100],['Rwanda',100],['DR Congo',150],['Nigeria',200],['Zimbabwe',10],['South Africa',10],['Malawi',10],['Lesotho',10],['Uganda',100],['Mozambique',200],['South Sudan',100],['Zambia',100],['Liberia',70],['France',10],['Ghana',150],['Madagascar',150],['India',250],['Kenya',100],['Ethiopia',100],['Sierra Leone',100],['USA',100],['Canada',100],['The Gambia',250],['Brazil',200],['Egypt',200]];
+    return { rows: d.map(([c, n]) => ({ c, n: String(n), w: Math.round(n / 250 * 100) + '%' })) };
+  }
+}
+return Component; })());
+DC.register('PastEvents', (function(){ class Component extends DCLogic {
+  renderVals() { return { items: [1, 2, 3, 4, 5, 6] }; }
+}
+return Component; })());
+DC.register('Advertising', (function(){ class Component extends DCLogic {
+  renderVals() {
+    const j = 'Dr. Joel Oluwafemi';
+    return { books: [
+      { t: 'You Better Pray', a: 'Pastor Bumie' },
+      { t: 'Global Economy Armageddon', a: j },
+      { t: 'Prophetic Navigator', a: j },
+      { t: 'The Spirit of Delay and Curses in Life', a: j },
+      { t: 'The Way of Escape', a: j },
+      { t: 'Working Ministerial Manual', a: j },
+      { t: 'Never Again', a: j },
+      { t: 'Winning the Battle of the Firstborn', a: j }
+    ] };
+  }
+}
+return Component; })());
+DC.register('UpcomingEvents', (function(){ class Component extends DCLogic {
+  renderVals() { return { items: [1, 2, 3], flyers: [1, 2, 3, 4, 5, 6, 7, 8] }; }
+}
+return Component; })());
+DC.register('StrategicEvents', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
+DC.register('UNEcosoc', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
+DC.register('BecomeMember', (function(){ class Component extends DCLogic {
+  renderVals() {
+    const c = ['Zimbabwe','Zambia','Ghana','Liberia','Nigeria','Burundi','Ethiopia','Tanzania','Kenya','Cameroon','South Africa','Namibia','DR Congo','USA','Philippines','The Gambia','United Kingdom','South Sudan','Mozambique','Uganda','Malawi','Rwanda','Botswana','Lesotho','Canada','Brazil','India','Pakistan','France','Sierra Leone','Madagascar','Egypt'];
+    return { nations: c.map((x, i) => ({ c: x, i: String(i + 1).padStart(2, '0') })) };
+  }
+}
+return Component; })());
+DC.register('Contact', (function(){ class Component extends DCLogic {
+  renderVals() {
+    return { people: [
+      { n: 'General enquiries', e: 'info@imacglobaluk.org' },
+      { n: 'Archbishop Dr. Joel Oluwafemi', e: 'Joel@imacglobaluk.org' },
+      { n: 'Rabbi Divine Dove', e: 'rabbi@imacglobaluk.org' },
+      { n: 'Accounts', e: 'account@imacglobaluk.org' },
+      { n: 'Rev. Richard Hawkins', e: 'richardhawk@imacglobaluk.org' },
+      { n: 'Rev. Stephen Anning', e: 'Stephen@imacglobaluk.org' },
+      { n: 'Richard', e: 'richard@imacglobaluk.org' },
+      { n: 'Jacqueline', e: 'Jacqueline@imacglobaluk.org' }
+    ] };
+  }
+}
+return Component; })());
 DC.start();
 /* Premium scroll layer: smooth scrolling, reveals, image parallax, header state, counters */
 (function () {
@@ -311,7 +463,7 @@ DC.start();
   });
   var big = [];
   document.querySelectorAll('section img').forEach(function (img) {
-    if (skip(img)) return;
+    if (skip(img) || img.closest('button.yt')) return;
     img.classList.add('img-reveal');
     targets.push(img);
     if (img.getBoundingClientRect().height >= 380 || parseInt(img.style.height, 10) >= 380) {
@@ -450,6 +602,11 @@ DC.start();
 /* YouTube: load the player only when a video is clicked (keeps the page fast) */
 (function () {
   document.querySelectorAll('button.yt[data-yt]').forEach(function (b) {
+    var th = b.querySelector('.yt-thumb');
+    if (th) {
+      var drop = function () { th.remove(); };
+      if (th.complete && th.naturalWidth === 0) drop(); else th.addEventListener('error', drop);
+    }
     b.addEventListener('click', function () {
       var f = document.createElement('iframe');
       f.src = 'https://www.youtube-nocookie.com/embed/' + b.getAttribute('data-yt') + '?autoplay=1&rel=0&playsinline=1';
