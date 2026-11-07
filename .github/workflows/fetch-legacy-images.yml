@@ -1,0 +1,29 @@
+name: Fetch images from the old site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/legacy-images.txt
+      - scripts/fetch_legacy_images.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - run: python scripts/fetch_legacy_images.py
+      - name: Commit images
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add assets/img/legacy
+          git diff --cached --quiet || (git commit -m "Add images from the old site" && git push)
