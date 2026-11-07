@@ -524,7 +524,16 @@ DC.start();
         counters.forEach(function (c) { if (en.target === c.el || en.target.contains(c.el)) countUp(c); });
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    targets.forEach(function (t) { io.observe(t); });
+    // Anything already on screen when the page opens is shown straight away, with no fade, so the first paint never flashes
+    var vh0 = window.innerHeight;
+    targets.forEach(function (t) {
+      var r = t.getBoundingClientRect();
+      if (r.top < vh0 && r.bottom > 0) { t.classList.add('no-anim', 'is-in'); counters.forEach(function (c) { if (t === c.el || t.contains(c.el)) countUp(c); }); }
+      else io.observe(t);
+    });
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      document.querySelectorAll('.no-anim').forEach(function (e) { e.classList.remove('no-anim'); });
+    }); });
     var cio = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (en.isIntersecting) { counters.forEach(function (c) { if (c.el === en.target) countUp(c); }); cio.unobserve(en.target); } });
     }, { threshold: 0.6 });

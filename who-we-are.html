@@ -26,8 +26,11 @@
 <link rel="icon" href="/assets/img/logo.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/img/logo.png">
 <link rel="preload" href="/assets/fonts/montserrat-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/montserrat-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/montserrat-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css?v=2c64d348">
+<link rel="preload" href="/assets/fonts/montserrat-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css?v=be097a19">
 <style>
 @media (max-width:900px){.g2,.g3,.g4,.g5{grid-template-columns:1fr 1fr !important}.split{grid-template-columns:1fr !important}}
 @media (max-width:560px){.wrap{padding:0 20px}.g2,.g3,.g4,.g5{grid-template-columns:1fr !important}.h2{font-size:32px}}
@@ -171,101 +174,101 @@
 <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 680px"><span class="eyebrow" style="color: #FF6A4D">Our objectives</span><h2 class="h2" style="color: #FFFFFF">Seven commitments, seven lamps</h2><p style="margin: 0; font-size: 17px; line-height: 1.65; color: #D3D9F2">“Ye are the light of the world.” Matthew 5:14</p></div>
 <div style="display: flex; flex-direction: column; gap: 10px; min-width: 240px">
-<span style="font-size: 14px; color: #C8D0F0"><strong style="color: #FFFFFF; font-size: 20px"><span data-tpl-text="{{lit}}">7</span></strong> of 7 lamps lit</span>
-<div style="height: 4px; background: #1A2A9E; border-radius: 2px; overflow: hidden"><div style="height: 4px; width: 100%; background: #FFD696; transition: width .3s" data-tpl-style="height: 4px; width: {{bar}}; background: #FFD696; transition: width .3s"></div></div>
+<span style="font-size: 14px; color: #C8D0F0"><strong style="color: #FFFFFF; font-size: 20px"><span data-tpl-text="{{lit}}">0</span></strong> of 7 lamps lit</span>
+<div style="height: 4px; background: #1A2A9E; border-radius: 2px; overflow: hidden"><div style="height: 4px; width: 0%; background: #FFD696; transition: width .3s" data-tpl-style="height: 4px; width: {{bar}}; background: #FFD696; transition: width .3s"></div></div>
 </div>
 </div>
 <div class="g3" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
 
-<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid rgba(255,214,150,0.55); background: rgba(255,214,150,0.07); transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.0.b}}; background: {{objectives.0.bg}}; transition: all .35s">
+<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid #1A2A9E; background: transparent; transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.0.b}}; background: {{objectives.0.bg}}; transition: all .35s">
 <div style="display: flex; justify-content: space-between; align-items: flex-start">
-<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #FFD696; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.0.nc}}; transition: color .35s">01</span>
+<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #7B88CC; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.0.nc}}; transition: color .35s">01</span>
 <svg width="44" height="56" viewBox="0 0 44 56" aria-hidden="true" style="overflow: visible">
-<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0.28" data-tpl-fill-opacity="{{objectives.0.glow}}"></circle>
-<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#FFB347" data-tpl-fill="{{objectives.0.flame}}" style="transform-origin: 22px 30px; transform: scale(1); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.0.fs}}); transition: all .35s"></path>
-<path d="M6 36h32l-4 10H10z" fill="#FF6A4D" data-tpl-fill="{{objectives.0.lamp}}"></path>
-<rect x="14" y="46" width="16" height="6" rx="2" fill="#FF6A4D" data-tpl-fill="{{objectives.0.lamp}}"></rect>
+<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0" data-tpl-fill-opacity="{{objectives.0.glow}}"></circle>
+<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#2533A0" data-tpl-fill="{{objectives.0.flame}}" style="transform-origin: 22px 30px; transform: scale(0.75); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.0.fs}}); transition: all .35s"></path>
+<path d="M6 36h32l-4 10H10z" fill="#2533A0" data-tpl-fill="{{objectives.0.lamp}}"></path>
+<rect x="14" y="46" width="16" height="6" rx="2" fill="#2533A0" data-tpl-fill="{{objectives.0.lamp}}"></rect>
 </svg>
 </div>
-<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #FFFFFF; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.0.tc}}; transition: color .35s">Spiritual Leadership and Capacity Building</span>
+<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #AEB8E4; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.0.tc}}; transition: color .35s">Spiritual Leadership and Capacity Building</span>
 </div>
 
-<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid rgba(255,214,150,0.55); background: rgba(255,214,150,0.07); transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.1.b}}; background: {{objectives.1.bg}}; transition: all .35s">
+<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid #1A2A9E; background: transparent; transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.1.b}}; background: {{objectives.1.bg}}; transition: all .35s">
 <div style="display: flex; justify-content: space-between; align-items: flex-start">
-<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #FFD696; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.1.nc}}; transition: color .35s">02</span>
+<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #7B88CC; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.1.nc}}; transition: color .35s">02</span>
 <svg width="44" height="56" viewBox="0 0 44 56" aria-hidden="true" style="overflow: visible">
-<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0.28" data-tpl-fill-opacity="{{objectives.1.glow}}"></circle>
-<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#FFB347" data-tpl-fill="{{objectives.1.flame}}" style="transform-origin: 22px 30px; transform: scale(1); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.1.fs}}); transition: all .35s"></path>
-<path d="M6 36h32l-4 10H10z" fill="#FF6A4D" data-tpl-fill="{{objectives.1.lamp}}"></path>
-<rect x="14" y="46" width="16" height="6" rx="2" fill="#FF6A4D" data-tpl-fill="{{objectives.1.lamp}}"></rect>
+<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0" data-tpl-fill-opacity="{{objectives.1.glow}}"></circle>
+<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#2533A0" data-tpl-fill="{{objectives.1.flame}}" style="transform-origin: 22px 30px; transform: scale(0.75); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.1.fs}}); transition: all .35s"></path>
+<path d="M6 36h32l-4 10H10z" fill="#2533A0" data-tpl-fill="{{objectives.1.lamp}}"></path>
+<rect x="14" y="46" width="16" height="6" rx="2" fill="#2533A0" data-tpl-fill="{{objectives.1.lamp}}"></rect>
 </svg>
 </div>
-<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #FFFFFF; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.1.tc}}; transition: color .35s">Church Unity and National Network Development</span>
+<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #AEB8E4; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.1.tc}}; transition: color .35s">Church Unity and National Network Development</span>
 </div>
 
-<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid rgba(255,214,150,0.55); background: rgba(255,214,150,0.07); transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.2.b}}; background: {{objectives.2.bg}}; transition: all .35s">
+<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid #1A2A9E; background: transparent; transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.2.b}}; background: {{objectives.2.bg}}; transition: all .35s">
 <div style="display: flex; justify-content: space-between; align-items: flex-start">
-<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #FFD696; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.2.nc}}; transition: color .35s">03</span>
+<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #7B88CC; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.2.nc}}; transition: color .35s">03</span>
 <svg width="44" height="56" viewBox="0 0 44 56" aria-hidden="true" style="overflow: visible">
-<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0.28" data-tpl-fill-opacity="{{objectives.2.glow}}"></circle>
-<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#FFB347" data-tpl-fill="{{objectives.2.flame}}" style="transform-origin: 22px 30px; transform: scale(1); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.2.fs}}); transition: all .35s"></path>
-<path d="M6 36h32l-4 10H10z" fill="#FF6A4D" data-tpl-fill="{{objectives.2.lamp}}"></path>
-<rect x="14" y="46" width="16" height="6" rx="2" fill="#FF6A4D" data-tpl-fill="{{objectives.2.lamp}}"></rect>
+<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0" data-tpl-fill-opacity="{{objectives.2.glow}}"></circle>
+<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#2533A0" data-tpl-fill="{{objectives.2.flame}}" style="transform-origin: 22px 30px; transform: scale(0.75); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.2.fs}}); transition: all .35s"></path>
+<path d="M6 36h32l-4 10H10z" fill="#2533A0" data-tpl-fill="{{objectives.2.lamp}}"></path>
+<rect x="14" y="46" width="16" height="6" rx="2" fill="#2533A0" data-tpl-fill="{{objectives.2.lamp}}"></rect>
 </svg>
 </div>
-<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #FFFFFF; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.2.tc}}; transition: color .35s">Social Advocacy and Public Policy Engagement</span>
+<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #AEB8E4; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.2.tc}}; transition: color .35s">Social Advocacy and Public Policy Engagement</span>
 </div>
 
-<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid rgba(255,214,150,0.55); background: rgba(255,214,150,0.07); transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.3.b}}; background: {{objectives.3.bg}}; transition: all .35s">
+<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid #1A2A9E; background: transparent; transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.3.b}}; background: {{objectives.3.bg}}; transition: all .35s">
 <div style="display: flex; justify-content: space-between; align-items: flex-start">
-<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #FFD696; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.3.nc}}; transition: color .35s">04</span>
+<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #7B88CC; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.3.nc}}; transition: color .35s">04</span>
 <svg width="44" height="56" viewBox="0 0 44 56" aria-hidden="true" style="overflow: visible">
-<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0.28" data-tpl-fill-opacity="{{objectives.3.glow}}"></circle>
-<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#FFB347" data-tpl-fill="{{objectives.3.flame}}" style="transform-origin: 22px 30px; transform: scale(1); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.3.fs}}); transition: all .35s"></path>
-<path d="M6 36h32l-4 10H10z" fill="#FF6A4D" data-tpl-fill="{{objectives.3.lamp}}"></path>
-<rect x="14" y="46" width="16" height="6" rx="2" fill="#FF6A4D" data-tpl-fill="{{objectives.3.lamp}}"></rect>
+<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0" data-tpl-fill-opacity="{{objectives.3.glow}}"></circle>
+<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#2533A0" data-tpl-fill="{{objectives.3.flame}}" style="transform-origin: 22px 30px; transform: scale(0.75); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.3.fs}}); transition: all .35s"></path>
+<path d="M6 36h32l-4 10H10z" fill="#2533A0" data-tpl-fill="{{objectives.3.lamp}}"></path>
+<rect x="14" y="46" width="16" height="6" rx="2" fill="#2533A0" data-tpl-fill="{{objectives.3.lamp}}"></rect>
 </svg>
 </div>
-<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #FFFFFF; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.3.tc}}; transition: color .35s">Humanitarian and Community Outreach</span>
+<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #AEB8E4; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.3.tc}}; transition: color .35s">Humanitarian and Community Outreach</span>
 </div>
 
-<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid rgba(255,214,150,0.55); background: rgba(255,214,150,0.07); transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.4.b}}; background: {{objectives.4.bg}}; transition: all .35s">
+<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid #1A2A9E; background: transparent; transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.4.b}}; background: {{objectives.4.bg}}; transition: all .35s">
 <div style="display: flex; justify-content: space-between; align-items: flex-start">
-<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #FFD696; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.4.nc}}; transition: color .35s">05</span>
+<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #7B88CC; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.4.nc}}; transition: color .35s">05</span>
 <svg width="44" height="56" viewBox="0 0 44 56" aria-hidden="true" style="overflow: visible">
-<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0.28" data-tpl-fill-opacity="{{objectives.4.glow}}"></circle>
-<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#FFB347" data-tpl-fill="{{objectives.4.flame}}" style="transform-origin: 22px 30px; transform: scale(1); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.4.fs}}); transition: all .35s"></path>
-<path d="M6 36h32l-4 10H10z" fill="#FF6A4D" data-tpl-fill="{{objectives.4.lamp}}"></path>
-<rect x="14" y="46" width="16" height="6" rx="2" fill="#FF6A4D" data-tpl-fill="{{objectives.4.lamp}}"></rect>
+<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0" data-tpl-fill-opacity="{{objectives.4.glow}}"></circle>
+<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#2533A0" data-tpl-fill="{{objectives.4.flame}}" style="transform-origin: 22px 30px; transform: scale(0.75); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.4.fs}}); transition: all .35s"></path>
+<path d="M6 36h32l-4 10H10z" fill="#2533A0" data-tpl-fill="{{objectives.4.lamp}}"></path>
+<rect x="14" y="46" width="16" height="6" rx="2" fill="#2533A0" data-tpl-fill="{{objectives.4.lamp}}"></rect>
 </svg>
 </div>
-<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #FFFFFF; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.4.tc}}; transition: color .35s">Global Missions and Cultural Exchange</span>
+<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #AEB8E4; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.4.tc}}; transition: color .35s">Global Missions and Cultural Exchange</span>
 </div>
 
-<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid rgba(255,214,150,0.55); background: rgba(255,214,150,0.07); transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.5.b}}; background: {{objectives.5.bg}}; transition: all .35s">
+<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid #1A2A9E; background: transparent; transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.5.b}}; background: {{objectives.5.bg}}; transition: all .35s">
 <div style="display: flex; justify-content: space-between; align-items: flex-start">
-<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #FFD696; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.5.nc}}; transition: color .35s">06</span>
+<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #7B88CC; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.5.nc}}; transition: color .35s">06</span>
 <svg width="44" height="56" viewBox="0 0 44 56" aria-hidden="true" style="overflow: visible">
-<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0.28" data-tpl-fill-opacity="{{objectives.5.glow}}"></circle>
-<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#FFB347" data-tpl-fill="{{objectives.5.flame}}" style="transform-origin: 22px 30px; transform: scale(1); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.5.fs}}); transition: all .35s"></path>
-<path d="M6 36h32l-4 10H10z" fill="#FF6A4D" data-tpl-fill="{{objectives.5.lamp}}"></path>
-<rect x="14" y="46" width="16" height="6" rx="2" fill="#FF6A4D" data-tpl-fill="{{objectives.5.lamp}}"></rect>
+<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0" data-tpl-fill-opacity="{{objectives.5.glow}}"></circle>
+<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#2533A0" data-tpl-fill="{{objectives.5.flame}}" style="transform-origin: 22px 30px; transform: scale(0.75); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.5.fs}}); transition: all .35s"></path>
+<path d="M6 36h32l-4 10H10z" fill="#2533A0" data-tpl-fill="{{objectives.5.lamp}}"></path>
+<rect x="14" y="46" width="16" height="6" rx="2" fill="#2533A0" data-tpl-fill="{{objectives.5.lamp}}"></rect>
 </svg>
 </div>
-<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #FFFFFF; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.5.tc}}; transition: color .35s">Youth Empowerment and Next-Generation Leadership</span>
+<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #AEB8E4; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.5.tc}}; transition: color .35s">Youth Empowerment and Next-Generation Leadership</span>
 </div>
 
-<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid rgba(255,214,150,0.55); background: rgba(255,214,150,0.07); transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.6.b}}; background: {{objectives.6.bg}}; transition: all .35s">
+<div style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid #1A2A9E; background: transparent; transition: all .35s" data-tpl-style="position: relative; overflow: hidden; padding: 28px; display: flex; flex-direction: column; gap: 16px; min-height: 190px; border-radius: 4px; border: 1px solid {{objectives.6.b}}; background: {{objectives.6.bg}}; transition: all .35s">
 <div style="display: flex; justify-content: space-between; align-items: flex-start">
-<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #FFD696; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.6.nc}}; transition: color .35s">07</span>
+<span style="font-size: 30px; font-weight: 800; line-height: 1; color: #7B88CC; transition: color .35s" data-tpl-style="font-size: 30px; font-weight: 800; line-height: 1; color: {{objectives.6.nc}}; transition: color .35s">07</span>
 <svg width="44" height="56" viewBox="0 0 44 56" aria-hidden="true" style="overflow: visible">
-<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0.28" data-tpl-fill-opacity="{{objectives.6.glow}}"></circle>
-<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#FFB347" data-tpl-fill="{{objectives.6.flame}}" style="transform-origin: 22px 30px; transform: scale(1); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.6.fs}}); transition: all .35s"></path>
-<path d="M6 36h32l-4 10H10z" fill="#FF6A4D" data-tpl-fill="{{objectives.6.lamp}}"></path>
-<rect x="14" y="46" width="16" height="6" rx="2" fill="#FF6A4D" data-tpl-fill="{{objectives.6.lamp}}"></rect>
+<circle cx="22" cy="18" r="22" fill="#FFD696" fill-opacity="0" data-tpl-fill-opacity="{{objectives.6.glow}}"></circle>
+<path d="M22 2C26 10 31 14 31 21a9 9 0 0 1-18 0c0-5 4-8 4-13 2 3 3 5 5 6 0-4-1-8 0-12z" fill="#2533A0" data-tpl-fill="{{objectives.6.flame}}" style="transform-origin: 22px 30px; transform: scale(0.75); transition: all .35s" data-tpl-style="transform-origin: 22px 30px; transform: scale({{objectives.6.fs}}); transition: all .35s"></path>
+<path d="M6 36h32l-4 10H10z" fill="#2533A0" data-tpl-fill="{{objectives.6.lamp}}"></path>
+<rect x="14" y="46" width="16" height="6" rx="2" fill="#2533A0" data-tpl-fill="{{objectives.6.lamp}}"></rect>
 </svg>
 </div>
-<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #FFFFFF; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.6.tc}}; transition: color .35s">Promotion of Peace, Justice and Sustainable Development</span>
+<span style="font-size: 18px; font-weight: 700; line-height: 1.35; color: #AEB8E4; transition: color .35s" data-tpl-style="font-size: 18px; font-weight: 700; line-height: 1.35; color: {{objectives.6.tc}}; transition: color .35s">Promotion of Peace, Justice and Sustainable Development</span>
 </div>
 
 </div>
@@ -342,6 +345,6 @@
 </footer>
 </div>
 <script src="/assets/js/lenis.min.js?v=79e3a064" defer></script>
-<script src="/assets/js/site.js?v=657ac91b" defer></script>
+<script src="/assets/js/site.js?v=d39d3698" defer></script>
 </body>
 </html>
