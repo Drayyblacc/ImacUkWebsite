@@ -392,3 +392,56 @@ DC.start();
   window.addEventListener('resize', onScroll);
   onScroll();
 })();
+
+/* Site functions: forms, keyboard support, external links */
+(function () {
+  'use strict';
+  // Forms send in the background and show the result inline
+  document.querySelectorAll('form[action*="formspree.io"]').forEach(function (form) {
+    var status = document.createElement('p');
+    status.setAttribute('role', 'status');
+    status.setAttribute('aria-live', 'polite');
+    status.style.cssText = 'margin:4px 0 0;font-size:14px;font-weight:600;min-height:1em';
+    form.appendChild(status);
+    form.addEventListener('submit', function (e) {
+      if (form.action.indexOf('YOUR_') !== -1) {
+        e.preventDefault();
+        status.style.color = '#D41C00';
+        status.textContent = 'This form is not connected yet. Please email info@imacglobaluk.org.';
+        return;
+      }
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; btn.dataset.label = btn.textContent; btn.textContent = 'Sending...'; }
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+        .then(function (r) {
+          if (!r.ok) throw new Error('bad');
+          form.reset();
+          status.style.color = form.closest('footer') ? '#FFFFFF' : '#001086';
+          status.textContent = form.closest('footer') ? 'Thank you, you are subscribed.' : 'Thank you. Your message has been sent and we will reply soon.';
+        })
+        .catch(function () {
+          status.style.color = form.closest('footer') ? '#FF6A4D' : '#D41C00';
+          status.textContent = 'Sorry, something went wrong. Please try again or email info@imacglobaluk.org.';
+        })
+        .then(function () { if (btn) { btn.disabled = false; btn.textContent = btn.dataset.label; } });
+    });
+  });
+
+  // Escape closes open menus
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    var header = document.querySelector('header[data-comp="Header"]');
+    if (!header) return;
+    header.dispatchEvent(new MouseEvent('mouseleave'));
+    var burger = header.querySelector('.hd-burger[aria-expanded="true"]');
+    if (burger) { burger.click(); burger.focus(); }
+  });
+
+  // External links open safely in a new tab
+  document.querySelectorAll('a[href^="http"]').forEach(function (a) {
+    if (a.hostname === location.hostname) return;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+})();
