@@ -419,6 +419,18 @@ DC.register('Contact', (function(){ class Component extends DCLogic {
   }
 }
 return Component; })());
+DC.register('Privacy', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
+DC.register('Cookies', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
+DC.register('Terms', (function(){ class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+return Component; })());
 DC.start();
 /* Premium scroll layer: smooth scrolling, reveals, image parallax, header state, counters */
 (function () {
@@ -643,4 +655,20 @@ DC.start();
   }
   window.addEventListener('scroll', check, { passive: true });
   check();
+})();
+
+/* Contact map: load Google Maps only when asked */
+(function () {
+  document.querySelectorAll('.map-ph[data-map]').forEach(function (box) {
+    var b = box.querySelector('.map-btn');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = box.getAttribute('data-map');
+      f.title = 'Map of IMAC UK office, Romford RM7 9EL';
+      f.referrerPolicy = 'no-referrer-when-downgrade';
+      f.style.cssText = 'display:block;width:100%;height:260px;border:0;border-radius:4px';
+      box.replaceWith(f);
+    }, { once: true });
+  });
 })();
