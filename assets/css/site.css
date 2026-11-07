@@ -42,6 +42,7 @@ body{margin:0}
 .ft-col a{display:block;padding:6px 0;font-size:15px}
 .ft-h{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#FF6A4D;margin:0 0 14px}
 .ft-soc{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #2533A0;border-radius:50%}
+@media (max-width:700px){.ft-right{align-items:flex-start !important}.ft-right>span{justify-content:flex-start !important}}
 @media (max-width:900px){.ft-grid{grid-template-columns:1fr 1fr !important}.ft-cta{flex-direction:column;align-items:flex-start !important}}
 @media (max-width:560px){.ft-grid{grid-template-columns:1fr !important}}
 .h2{margin:0;font-family:Montserrat,sans-serif;font-weight:700;font-size:36px;line-height:1.18;letter-spacing:-0.01em;color:#001086}
