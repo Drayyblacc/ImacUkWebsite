@@ -52,7 +52,7 @@ The website of the International Ministerial Alliance of Churches UK, imacglobal
 
 1. Point imacglobaluk.org at Cloudflare Pages. Copy the existing email records (MX, SPF, DKIM) first so email keeps working.
 2. Submit `https://imacglobaluk.org/sitemap.xml` in Google Search Console once the domain is live.
-3. IMAC to review and approve the privacy policy, cookie policy and terms of use, including how long they keep emails and membership records.
+3. IMAC to review and approve the privacy policy, cookie policy and terms of use. The privacy policy commits IMAC to deleting enquiry emails and call notes within 3 months, membership details within 3 months of membership ending, and keeping payment records for the 6 years HMRC requires.
 4. Contact and newsletter forms are not on the site yet. Visitors get email and call buttons instead. To add forms, create them at formspree.io and send the form IDs to the developer. `_headers` already allows Formspree.
 5. IMAC to approve the wording of the safeguarding statement.
 6. Add social media links to the footer once the official accounts are confirmed.
