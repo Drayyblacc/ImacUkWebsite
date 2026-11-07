@@ -278,6 +278,7 @@ DC.start();
   var lenis = null;
   if (!reduce && window.Lenis) {
     lenis = new window.Lenis({ duration: 1.15, easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); }, smoothWheel: true });
+    window.__lenis = lenis;
     var raf = function (time) { lenis.raf(time); requestAnimationFrame(raf); };
     requestAnimationFrame(raf);
     document.addEventListener('click', function (e) {
@@ -461,4 +462,28 @@ DC.start();
       b.style.cursor = 'default';
     }, { once: true });
   });
+})();
+
+/* Back to top button */
+(function () {
+  var b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'to-top';
+  b.setAttribute('aria-label', 'Back to top');
+  b.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>';
+  document.body.appendChild(b);
+  b.addEventListener('click', function () {
+    if (window.__lenis) window.__lenis.scrollTo(0, { duration: 1.2 });
+    else window.scrollTo({ top: 0, behavior: 'smooth' });
+    var main = document.getElementById('main');
+    var logo = document.querySelector('header a[href="/"]');
+    if (logo) setTimeout(function () { logo.focus({ preventScroll: true }); }, 900);
+  });
+  var shown = false;
+  function check() {
+    var s = (window.scrollY || document.documentElement.scrollTop) > 700;
+    if (s !== shown) { shown = s; b.classList.toggle('is-visible', s); }
+  }
+  window.addEventListener('scroll', check, { passive: true });
+  check();
 })();
