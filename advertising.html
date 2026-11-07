@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css?v=cc4b9072">
+<link rel="stylesheet" href="/assets/css/site.css?v=52380dfa">
 <style>
 .body{margin:0;font-size:17px;line-height:1.7;color:#3A3D45}
 @media (max-width:900px){.g4{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.split{grid-template-columns:1fr !important}}
@@ -38,7 +38,7 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<div style="font-family: Montserrat, sans-serif; color: #1D1E20; background: #F5F7FA">
+<div data-comp="Advertising" data-props='{}' style="font-family: Montserrat, sans-serif; color: #1D1E20; background: #F5F7FA">
 <header data-comp="Header" data-props='{"active": "about"}' style="position: relative; z-index: 50; font-family: Montserrat, sans-serif; color: #1D1E20; background: #FFFFFF; border-bottom: 1px solid #DADCE0" data-on-mouseleave="closeAll">
 <div style="background: #000A5C; color: #C8D0F0; font-size: 13px">
 <div style="max-width: 1240px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; min-height: 40px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
@@ -68,9 +68,15 @@
 <nav aria-label="Main">
 <ul class="hd-nav">
 <li><a class="hd-link" href="/">Home</a></li>
-<li style="position: relative"><button class="hd-link is-active" type="button" aria-expanded="false" data-tpl-aria-expanded="" data-on-click="toggleAbout" data-on-mouseenter="openAbout">About Us <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></li>
-<li style="position: relative"><button class="hd-link" type="button" aria-expanded="false" data-on-click="toggleEvents" data-on-mouseenter="openEvents">Events <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
-
+<li style="position: relative"><button class="hd-link is-active" type="button" aria-expanded="false" data-tpl-aria-expanded="" data-tpl-data-tpl-aria-expanded="{{aboutOpen}}" data-on-click="toggleAbout" data-on-mouseenter="openAbout">About Us <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button></li>
+<li style="position: relative"><button class="hd-link" type="button" aria-expanded="false" data-tpl-aria-expanded="" data-tpl-data-tpl-aria-expanded="{{eventsOpen}}" data-on-click="toggleEvents" data-on-mouseenter="openEvents">Events <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
+<div data-if="eventsOpen" style="display: none">
+<div class="hd-menu" style="position: absolute; top: 52px; left: 0; width: 300px; background: #FFFFFF; border: 1px solid #DADCE0; border-radius: 6px; box-shadow: 0 18px 40px rgba(0,10,92,0.14); padding: 16px 24px">
+<a href="/upcoming-events">Upcoming Events</a>
+<a href="/strategic-events-for-global-expansion">Strategic Events For Global Expansion</a>
+<a href="/past-events">Past Events</a>
+</div>
+</div>
 </li>
 <li><a class="hd-link" href="/un-ecosoc" data-on-mouseenter="closeAll">UN ECOSOC</a></li>
 <li><a class="hd-link" href="/become-a-member" data-on-mouseenter="closeAll">Membership</a></li>
@@ -79,7 +85,7 @@
 </nav>
 <div style="display: flex; align-items: center; gap: 12px">
 <a class="hd-give hd-desk" href="https://www.paypal.com/donate/?hosted_button_id=7YRXPEP52GZXY"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"></path></svg>Give Today</a>
-<button class="hd-burger" type="button" aria-label="Open menu" aria-expanded="false" data-tpl-aria-expanded="" style="align-items: center; justify-content: center; width: 48px; height: 48px; border: 1px solid #DADCE0; border-radius: 4px; background: #FFFFFF; color: #001086; cursor: pointer" data-on-click="toggleMob"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
+<button class="hd-burger" type="button" aria-label="Open menu" aria-expanded="false" data-tpl-aria-expanded="" data-tpl-data-tpl-aria-expanded="{{mobOpen}}" style="align-items: center; justify-content: center; width: 48px; height: 48px; border: 1px solid #DADCE0; border-radius: 4px; background: #FFFFFF; color: #001086; cursor: pointer" data-on-click="toggleMob"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
 </div>
 </div>
 <div data-if="aboutOpen" style="display: none">
@@ -101,7 +107,7 @@
 </div>
 <div data-if="mobOpen" style="display: none">
 <div class="hd-mob" style="padding: 8px 20px 24px; background: #FFFFFF; border-top: 1px solid #DADCE0">
-<a href="/">Home</a><a href="/who-we-are">Who We Are</a><a href="/about-the-archbishop">About The Archbishop</a><a href="/meet-our-team">Meet Our Team</a><a href="/imac-chaplain">IMAC Chaplain</a><a href="/upcoming-events">Upcoming Events</a><a href="/un-ecosoc">UN ECOSOC</a><a href="/become-a-member">Membership</a><a href="/contact-us">Contact Us</a>
+<a href="/">Home</a><p class="hd-mob-h">About Us</p><a href="/who-we-are">Who We Are</a><a href="/about-the-archbishop">About The Archbishop</a><a href="/meet-our-team">Meet Our Team</a><a href="/annual-reports">Annual Reports</a><a href="/imac-chaplain">IMAC Chaplain</a><a href="/ecclesiastical-department">Ecclesiastical Department</a><a href="/college-of-bishops">College Of Bishops</a><a href="/missions">Missions</a><a href="/imac-global-work-force">IMAC Global Work Force</a><a href="/partners">Partners</a><a href="/safeguarding">Safeguarding</a><a href="/advertising">Advertising</a><p class="hd-mob-h">Events</p><a href="/upcoming-events">Upcoming Events</a><a href="/strategic-events-for-global-expansion">Strategic Events For Global Expansion</a><a href="/past-events">Past Events</a><p class="hd-mob-h">More</p><a href="/un-ecosoc">UN ECOSOC</a><a href="/become-a-member">Membership</a><a href="/contact-us">Contact Us</a>
 <a class="hd-give" href="https://www.paypal.com/donate/?hosted_button_id=7YRXPEP52GZXY" style="margin-top: 16px; justify-content: center; border: 0; color: #001086">Give Today</a>
 </div>
 </div>
@@ -246,6 +252,6 @@
 </footer>
 </div>
 <script src="/assets/js/lenis.min.js?v=79e3a064" defer></script>
-<script src="/assets/js/site.js?v=a5cc05a8" defer></script>
+<script src="/assets/js/site.js?v=205a1e07" defer></script>
 </body>
 </html>

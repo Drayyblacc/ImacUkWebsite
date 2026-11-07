@@ -27,6 +27,8 @@ body{margin:0}
 .hd-give{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 22px;border-radius:0;background:#D41C00;color:#FFFFFF;font:600 15px/1 Montserrat,sans-serif;text-decoration:none}
 .hd-give:hover{background:#B81800;color:#FFFFFF}
 .hd-burger{display:none}
+.hd-mob-h{margin:18px 0 2px;font:600 12px/1.2 Montserrat,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#D41C00}
+.hd-mob{max-height:calc(100vh - 128px);overflow-y:auto;overscroll-behavior:contain}
 .hd-mob a{display:block;padding:12px 0;border-bottom:1px solid #DADCE0;font:500 16px/1.3 Montserrat,sans-serif;color:#1D1E20;text-decoration:none}
 @media (max-width:1240px){.hd-nav,.hd-desk{display:none}.hd-burger{display:inline-flex}.hd-util-r{display:none !important}}
 @media (max-width:359px){.hd-tag{display:none}}
