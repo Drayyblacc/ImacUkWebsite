@@ -445,3 +445,20 @@ DC.start();
     a.rel = 'noopener';
   });
 })();
+
+/* YouTube: load the player only when a video is clicked (keeps the page fast) */
+(function () {
+  document.querySelectorAll('button.yt[data-yt]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + b.getAttribute('data-yt') + '?autoplay=1&rel=0&playsinline=1';
+      f.title = b.getAttribute('aria-label') || 'Video';
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.allowFullscreen = true;
+      f.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0';
+      b.innerHTML = '';
+      b.appendChild(f);
+      b.style.cursor = 'default';
+    }, { once: true });
+  });
+})();

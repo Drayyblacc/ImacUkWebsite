@@ -72,3 +72,5 @@ header[data-comp="Header"].is-scrolled{background:rgba(255,255,255,.92) !importa
 .skip-link:focus{top:12px;color:#FFFFFF}
 :focus-visible{outline:2px solid #D41C00;outline-offset:3px}
 button:disabled{opacity:.7;cursor:wait}
+@media (max-width:900px){.vgrid{grid-template-columns:1fr 1fr !important}.vgrid>button:first-child{grid-column:1 / -1}}
+@media (max-width:1400px){.hd-tag{display:none}}
