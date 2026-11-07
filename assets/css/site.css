@@ -41,12 +41,7 @@ body{margin:0}
 .body{margin:0;font-size:18px;line-height:1.7;color:#3A3D45}
 @media (max-width:760px){.ph-art{display:none}.ph-title{font-size:40px !important}}
 .body{margin:0;font-size:18px;line-height:1.75;color:#3A3D45}
-@media (max-width:560px){.wrap{padding:0 20px}}
-@media (max-width:560px){.wrap{padding:0 20px}.g3{grid-template-columns:1fr !important}}
-@media (max-width:900px){.g3{grid-template-columns:1fr 1fr !important}}
-@media (max-width:900px){.split{grid-template-columns:1fr !important}.g3{grid-template-columns:1fr 1fr !important}}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 20px;border-radius:0;font:600 14px/1 Montserrat,sans-serif;text-decoration:none}
-@media (max-width:560px){.wrap{padding:0 20px}.g4{grid-template-columns:1fr !important}}
 /* Premium scroll layer */
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto !important}
@@ -74,3 +69,5 @@ header[data-comp="Header"].is-scrolled{background:rgba(255,255,255,.92) !importa
 button:disabled{opacity:.7;cursor:wait}
 @media (max-width:900px){.vgrid{grid-template-columns:1fr 1fr !important}.vgrid>button:first-child{grid-column:1 / -1}}
 @media (max-width:1400px){.hd-tag{display:none}}
+@media (max-width:900px){.g4[style*="max-width: 860px"]{flex:1 1 100% !important;max-width:none !important;width:100%;grid-template-columns:1fr 1fr !important}}
+@media (max-width:560px){h1,h2,.h2{overflow-wrap:break-word;hyphens:auto}a[href^="mailto:"]{overflow-wrap:anywhere}}
