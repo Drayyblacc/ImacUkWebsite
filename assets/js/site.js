@@ -611,6 +611,57 @@ DC.start();
   });
 })();
 
+
+/* Cookie consent: asks once, remembers the choice for 12 months.
+   Accept allows YouTube videos and Google Maps to load on the page.
+   Reject keeps them off; videos and the map then open on their own sites instead. */
+(function () {
+  var KEY = 'imac-consent', DAYS = 365, listeners = [];
+  function read() {
+    try {
+      var v = JSON.parse(localStorage.getItem(KEY) || 'null');
+      if (v && v.c && Date.now() - v.t < DAYS * 864e5) return v.c;
+    } catch (e) {}
+    return null;
+  }
+  function save(c) {
+    try { localStorage.setItem(KEY, JSON.stringify({ c: c, t: Date.now() })); } catch (e) {}
+  }
+  var state = read(), box = null;
+  function close() { if (box) { box.remove(); box = null; } }
+  function choose(c) {
+    state = c; save(c); close();
+    listeners.forEach(function (fn) { fn(c); });
+  }
+  function open() {
+    if (box) return;
+    box = document.createElement('div');
+    box.className = 'ck';
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-live', 'polite');
+    box.setAttribute('aria-label', 'Cookie choices');
+    box.innerHTML =
+      '<div class="ck-in">' +
+      '<div class="ck-txt"><strong>Your cookie choices</strong>' +
+      '<p>This website does not use tracking or advertising cookies. If you accept, YouTube videos and Google Maps can load on our pages, and those services may set their own cookies. If you reject, they stay off and open on their own sites instead. <a href="/cookie-policy">Cookie Policy</a></p></div>' +
+      '<div class="ck-btns"><button type="button" class="ck-b" data-c="rejected">Reject</button><button type="button" class="ck-b" data-c="accepted">Accept</button></div>' +
+      '</div>';
+    box.querySelectorAll('button[data-c]').forEach(function (b) {
+      b.addEventListener('click', function () { choose(b.getAttribute('data-c')); });
+    });
+    document.body.appendChild(box);
+  }
+  window.IMACConsent = {
+    get: function () { return state; },
+    open: open,
+    onChange: function (fn) { listeners.push(fn); }
+  };
+  document.querySelectorAll('.ck-open').forEach(function (b) {
+    b.addEventListener('click', function (e) { e.preventDefault(); open(); });
+  });
+  if (!state) open();
+})();
+
 /* YouTube: load the player only when a video is clicked (keeps the page fast) */
 (function () {
   document.querySelectorAll('button.yt[data-yt]').forEach(function (b) {
@@ -620,6 +671,13 @@ DC.start();
       if (th.complete && th.naturalWidth === 0) drop(); else th.addEventListener('error', drop);
     }
     b.addEventListener('click', function () {
+      var C = window.IMACConsent;
+      if (C && C.get() !== 'accepted') {
+        if (C.get() === 'rejected') window.open('https://www.youtube.com/watch?v=' + b.getAttribute('data-yt'), '_blank', 'noopener');
+        else C.open();
+        return;
+      }
+      if (b.querySelector('iframe')) return;
       var f = document.createElement('iframe');
       f.src = 'https://www.youtube-nocookie.com/embed/' + b.getAttribute('data-yt') + '?autoplay=1&rel=0&playsinline=1';
       f.title = b.getAttribute('aria-label') || 'Video';
@@ -629,7 +687,7 @@ DC.start();
       b.innerHTML = '';
       b.appendChild(f);
       b.style.cursor = 'default';
-    }, { once: true });
+    });
   });
 })();
 
@@ -662,13 +720,22 @@ DC.start();
   document.querySelectorAll('.map-ph[data-map]').forEach(function (box) {
     var b = box.querySelector('.map-btn');
     if (!b) return;
-    b.addEventListener('click', function () {
+    function load() {
+      if (!box.isConnected) return;
       var f = document.createElement('iframe');
       f.src = box.getAttribute('data-map');
       f.title = 'Map of IMAC UK office, Romford RM7 9EL';
       f.referrerPolicy = 'no-referrer-when-downgrade';
       f.style.cssText = 'display:block;width:100%;height:260px;border:0;border-radius:4px';
       box.replaceWith(f);
-    }, { once: true });
+    }
+    var C = window.IMACConsent;
+    if (C && C.get() === 'accepted') { load(); return; }
+    if (C) C.onChange(function (c) { if (c === 'accepted') load(); });
+    b.addEventListener('click', function () {
+      if (C && C.get() === 'rejected') { window.open('https://www.google.com/maps/search/?api=1&query=248%20London%20Road%2C%20Romford%20RM7%209EL', '_blank', 'noopener'); return; }
+      if (C && C.get() !== 'accepted') { C.open(); return; }
+      load();
+    });
   });
 })();

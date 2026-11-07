@@ -102,3 +102,18 @@ button:disabled{opacity:.7;cursor:wait}
 @media (max-width:900px){.flyers{grid-template-columns:1fr 1fr !important}}
 @media (max-width:420px){.flyers{grid-template-columns:1fr !important}}
 @media (max-width:560px){footer>div:last-child>div{padding-bottom:96px !important}}
+
+/* Cookie consent bar */
+.ck{position:fixed;left:16px;right:16px;bottom:16px;z-index:1000;display:flex;justify-content:center;pointer-events:none}
+.ck-in{pointer-events:auto;max-width:960px;width:100%;display:flex;align-items:center;gap:24px;background:#FFFFFF;color:#1D1E20;border:1px solid #DADCE0;border-top:4px solid #001086;border-radius:6px;box-shadow:0 18px 48px rgba(0,10,92,.22);padding:20px 24px;font-family:Montserrat,sans-serif}
+.ck-txt{flex:1;display:flex;flex-direction:column;gap:6px}
+.ck-txt strong{font-size:16px;color:#001086}
+.ck-txt p{margin:0;font-size:14px;line-height:1.6;color:#3A3D45}
+.ck-txt a{color:#001086;font-weight:600}
+.ck-btns{display:flex;gap:10px;flex:none}
+.ck-b{min-height:46px;min-width:120px;padding:0 22px;border:0;border-radius:0;background:#001086;color:#FFFFFF;font:600 15px/1 Montserrat,sans-serif;cursor:pointer}
+.ck-b:hover,.ck-b:focus-visible{background:#D41C00}
+.ck-b:focus-visible{outline:3px solid #FF6A4D;outline-offset:2px}
+.ft-cookie{background:none;border:0;padding:0;color:#C8D0F0;font:inherit;cursor:pointer}
+.ft-cookie:hover{color:#FF6A4D}
+@media (max-width:700px){.ck{left:10px;right:10px;bottom:10px}.ck-in{flex-direction:column;align-items:stretch;gap:16px;padding:18px}.ck-btns{width:100%}.ck-b{flex:1;min-width:0}}
