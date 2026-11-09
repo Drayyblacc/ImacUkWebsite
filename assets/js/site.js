@@ -217,10 +217,10 @@ DC.register('Main', (function(){ class Component extends DCLogic {
       nations: ['United Kingdom','Zimbabwe','Zambia','Ghana','Liberia','Nigeria','Burundi','Ethiopia','Tanzania','Kenya','Cameroon','South Africa','Namibia','DR Congo','USA','Philippines','The Gambia','South Sudan','Mozambique','Uganda','Malawi','Rwanda','Botswana','Lesotho','Canada','Brazil','India','Pakistan','France','Sierra Leone','Madagascar','Egypt'],
       events: ['[EVENT TITLE]','[EVENT TITLE]','[EVENT TITLE]'],
       leaders: [
-        { name: 'Archbishop Dr. Joel Oluwafemi', role: 'Presiding Archbishop' },
+        { name: 'Archbishop Dr. Ebenezer O. Oyedeji', role: 'Presiding Archbishop' },
+        { name: 'Archbishop Dr. Joel Oluwafemi', role: 'Founder and Archbishop Emeritus' },
         { name: 'Bishop Elect Ebenezer Jojo Annan', role: 'Global President' },
-        { name: 'Rev. Stephen Anning', role: 'Mission Coordinator, Office of the Founder' },
-        { name: 'Pastor Abena Berko', role: 'Worship Director' }
+        { name: 'Rev. Stephen Anning', role: 'General Overseer, Office of the Founder' }
       ]
     };
   }
@@ -320,13 +320,12 @@ DC.register('Team', (function(){ class Component extends DCLogic {
     const m = (a) => a.map(([n, r]) => ({ n, r }));
     return {
       global: m([
-        ['Archbishop Dr. Joel Oluwafemi', 'Presiding Archbishop'],
+        ['Archbishop Dr. Ebenezer O. Oyedeji', 'Presiding Archbishop'],
+        ['Archbishop Dr. Joel Oluwafemi', 'Founder and Archbishop Emeritus'],
         ['Bishop Elect Ebenezer Jojo Annan', 'Global President'],
-        ['Rev. Stephen Anning', 'Mission Coordinator, Office of the Founder'],
-        ['Pastor Abena Berko', 'Worship Director'],
+        ['Rev. Stephen Anning', 'General Overseer, Office of the Founder'],
         ['Rabbi Divine Dove', 'Chairman, Ecclesiastical Board'],
         ['Bishop Esy Oluwafemi', 'IMAC Global Women Director'],
-        ['Bishop Ebenezer O. Oyedeji', 'General Secretary'],
         ['Rev. Ruth Mutanda', 'Secretary General'],
         ['Rev. Richard Hawkins', 'Global Vice President, Standard and Report Director'],
         ['Bishop Elect Wemimo Babasola', 'Liaison Director'],
