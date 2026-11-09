@@ -370,17 +370,218 @@ DC.register('PastEvents', (function(){ class Component extends DCLogic {
 return Component; })());
 DC.register('Advertising', (function(){ class Component extends DCLogic {
   renderVals() {
-    const j = 'Dr. Joel Oluwafemi';
     return { books: [
-      { t: 'You Better Pray', a: 'Pastor Bumie' },
-      { t: 'Global Economy Armageddon', a: j },
-      { t: 'Prophetic Navigator', a: j },
-      { t: 'The Spirit of Delay and Curses in Life', a: j },
-      { t: 'The Way of Escape', a: j },
-      { t: 'Working Ministerial Manual', a: j },
-      { t: 'Never Again', a: j },
-      { t: 'Winning the Battle of the Firstborn', a: j }
-    ] };
+ {
+  "t": "After 60: Why God Kept You Alive",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HQWZS28T.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HQWZS28T"
+ },
+ {
+  "t": "Buried by God: Why No Man Knows Where Moses Lies",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HQY24QD7.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HQY24QD7"
+ },
+ {
+  "t": "3 Times God Came Down to Earth: And Why the Last Time Never Ended",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HQVJ6FQF.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HQVJ6FQF"
+ },
+ {
+  "t": "Damascus: The Road That Took His Sight and Gave Him His Life",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HPB4L62B.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HPB4L62B"
+ },
+ {
+  "t": "6 Things: You Shouldn't Let People Know About You",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HMNPJYLW.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HMNPJYLW"
+ },
+ {
+  "t": "8 Physical Signs: God Is Speaking to You",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HMNLXC5Z.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HMNLXC5Z"
+ },
+ {
+  "t": "Make Disciples: The One Command Jesus Left Behind",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HM59V7MC.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HM59V7MC"
+ },
+ {
+  "t": "10 Dimensions of Fasting: What Happens on Each Day",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HQ57389G.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HQ57389G"
+ },
+ {
+  "t": "Ask: Why Jesus Told You to Keep Knocking",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HPB7YVHD.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HPB7YVHD"
+ },
+ {
+  "t": "Follow Me: The Road He Asked You to Walk",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HM94HP48.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HM94HP48"
+ },
+ {
+  "t": "Family: The First Institution of God",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HKHCJV96.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HKHCJV96"
+ },
+ {
+  "t": "The Sealed: Elite Spiritual Warriors, 144,000 Cannot Die",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HKLN4M5Z.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HKLN4M5Z"
+ },
+ {
+  "t": "Crucified: Longinus the Roman Centurion Pierced Jesus' Side",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HK7VDTR5.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HK7VDTR5"
+ },
+ {
+  "t": "In the Beginning Yahweh",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HJV31KVK.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HJV31KVK"
+ },
+ {
+  "t": "Why Jesus Had to Go to Hell: The Three Days After His Death",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HJB6GWF4.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HJB6GWF4"
+ },
+ {
+  "t": "What About Marriage: A Timeless Guide to Love, Commitment and Purpose",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HH8VPWVH.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HH8VPWVH"
+ },
+ {
+  "t": "The Judge and the Judgment Seat: From the Cross to the Throne",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HGDMM73F.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HGDMM73F"
+ },
+ {
+  "t": "The Vine: IMAC Ministers' Handbook",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HDP49S6M.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HDP49S6M"
+ },
+ {
+  "t": "War, Weapons and Warfare: Understanding Spiritual Conflict",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HCZGQZGH.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HCZGQZGH"
+ },
+ {
+  "t": "Fit to Lead: Becoming a Vessel Fit for the Master's Use",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0HCCLGBC7.webp",
+  "u": "https://www.amazon.co.uk/dp/B0HCCLGBC7"
+ },
+ {
+  "t": "Global Economic Armageddon: What Happened to My Money?",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B0H8NJZNF3.webp",
+  "u": "https://www.amazon.co.uk/dp/B0H8NJZNF3"
+ },
+ {
+  "t": "Winning the Battles of the Firstborn",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08H8GGZ54.webp",
+  "u": "https://www.amazon.co.uk/dp/B08H8GGZ54"
+ },
+ {
+  "t": "The Prayer of the Firstborn: Prophetic Declaration",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-1631730150.webp",
+  "u": "https://www.amazon.co.uk/dp/B08FBNZ3DJ"
+ },
+ {
+  "t": "IMAC Ministers' Manual",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08F9CQ5Q4.webp",
+  "u": "https://www.amazon.co.uk/dp/B08F9CQ5Q4"
+ },
+ {
+  "t": "Prophetic Navigator: Helping You Find Your Place of Destiny",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08F82Z8KH.webp",
+  "u": "https://www.amazon.co.uk/dp/B08F7YZ7V8"
+ },
+ {
+  "t": "Strategy for Economic Prosperity: Tried and Tested Methods That Work!",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08F9ZZ3XH.webp",
+  "u": "https://www.amazon.co.uk/dp/B08F9ZZ3XH"
+ },
+ {
+  "t": "Overcoming the Spirit of Delay and Curses in Life",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08F8VPCHK.webp",
+  "u": "https://www.amazon.co.uk/dp/B08F8VPCHK"
+ },
+ {
+  "t": "4 Elements of Deliverance: Totally Liberated",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08F8LQ611.webp",
+  "u": "https://www.amazon.co.uk/dp/B08F8LQ611"
+ },
+ {
+  "t": "Deliverance: Totally Delivered",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08F81K6DY.webp",
+  "u": "https://www.amazon.co.uk/dp/B08F81K6DY"
+ },
+ {
+  "t": "Precious Faith",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08F6J5KHP.webp",
+  "u": "https://www.amazon.co.uk/dp/B08F6J5KHP"
+ },
+ {
+  "t": "Days of Antipas: Into 2020s",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08DYDQJPJ.webp",
+  "u": "https://www.amazon.co.uk/dp/B08DYDQJPJ"
+ },
+ {
+  "t": "Know Your Dreams with Interpretation",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/kdp-B08F6PJHVH.webp",
+  "u": "https://www.amazon.co.uk/dp/B08F6PJHVH"
+ },
+ {
+  "t": "You Better Pray",
+  "a": "Pastor Bumie",
+  "img": "/assets/img/legacy/book01.webp",
+  "u": "https://www.amazon.co.uk/s?k=You+Better+Pray+Bumie"
+ },
+ {
+  "t": "The Way of Escape",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/book05.webp",
+  "u": "https://www.amazon.co.uk/s?k=The+Way+of+Escape+Joel+Oluwafemi"
+ },
+ {
+  "t": "Never Again",
+  "a": "Dr. Joel Oluwafemi",
+  "img": "/assets/img/legacy/book07.webp",
+  "u": "https://www.amazon.co.uk/s?k=Never+Again+Joel+Oluwafemi"
+ }
+] };
   }
 }
 return Component; })());

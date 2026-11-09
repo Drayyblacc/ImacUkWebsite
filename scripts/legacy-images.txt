@@ -34,3 +34,36 @@ nations.webp banner1ew-azg8jzrryes5zgyx-tWKXUV44PCWKigwY.jpeg
 # YouTube Shorts thumbnails for the home page video grid
 yt-2NbVj_9apWQ.webp https://i.ytimg.com/vi/2NbVj_9apWQ/oardefault.jpg|https://i.ytimg.com/vi/2NbVj_9apWQ/maxresdefault.jpg|https://i.ytimg.com/vi/2NbVj_9apWQ/hqdefault.jpg
 yt-LWjSOFI1v84.webp https://i.ytimg.com/vi/LWjSOFI1v84/oardefault.jpg|https://i.ytimg.com/vi/LWjSOFI1v84/maxresdefault.jpg|https://i.ytimg.com/vi/LWjSOFI1v84/hqdefault.jpg
+# Book covers from Amazon for the Advertising page (Dr. Joel Oluwafemi titles on KDP)
+kdp-B0HQWZS28T.webp https://images-na.ssl-images-amazon.com/images/P/B0HQWZS28T.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HQWZS28T.jpg
+kdp-B0HQY24QD7.webp https://images-na.ssl-images-amazon.com/images/P/B0HQY24QD7.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HQY24QD7.jpg
+kdp-B0HQVJ6FQF.webp https://images-na.ssl-images-amazon.com/images/P/B0HQVJ6FQF.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HQVJ6FQF.jpg
+kdp-B0HPB4L62B.webp https://images-na.ssl-images-amazon.com/images/P/B0HPB4L62B.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HPB4L62B.jpg
+kdp-B0HMNPJYLW.webp https://images-na.ssl-images-amazon.com/images/P/B0HMNPJYLW.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HMNPJYLW.jpg
+kdp-B0HMNLXC5Z.webp https://images-na.ssl-images-amazon.com/images/P/B0HMNLXC5Z.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HMNLXC5Z.jpg
+kdp-B0HM59V7MC.webp https://images-na.ssl-images-amazon.com/images/P/B0HM59V7MC.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HM59V7MC.jpg
+kdp-B0HQ57389G.webp https://images-na.ssl-images-amazon.com/images/P/B0HQ57389G.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HQ57389G.jpg
+kdp-B0HPB7YVHD.webp https://images-na.ssl-images-amazon.com/images/P/B0HPB7YVHD.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HPB7YVHD.jpg
+kdp-B0HM94HP48.webp https://images-na.ssl-images-amazon.com/images/P/B0HM94HP48.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HM94HP48.jpg
+kdp-B0HKHCJV96.webp https://images-na.ssl-images-amazon.com/images/P/B0HKHCJV96.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HKHCJV96.jpg
+kdp-B0HKLN4M5Z.webp https://images-na.ssl-images-amazon.com/images/P/B0HKLN4M5Z.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HKLN4M5Z.jpg
+kdp-B0HK7VDTR5.webp https://images-na.ssl-images-amazon.com/images/P/B0HK7VDTR5.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HK7VDTR5.jpg
+kdp-B0HJV31KVK.webp https://images-na.ssl-images-amazon.com/images/P/B0HJV31KVK.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HJV31KVK.jpg
+kdp-B0HJB6GWF4.webp https://images-na.ssl-images-amazon.com/images/P/B0HJB6GWF4.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HJB6GWF4.jpg
+kdp-B0HH8VPWVH.webp https://images-na.ssl-images-amazon.com/images/P/B0HH8VPWVH.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HH8VPWVH.jpg
+kdp-B0HGDMM73F.webp https://images-na.ssl-images-amazon.com/images/P/B0HGDMM73F.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HGDMM73F.jpg
+kdp-B0HDP49S6M.webp https://images-na.ssl-images-amazon.com/images/P/B0HDP49S6M.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HDP49S6M.jpg
+kdp-B0HCZGQZGH.webp https://images-na.ssl-images-amazon.com/images/P/B0HCZGQZGH.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HCZGQZGH.jpg
+kdp-B0HCCLGBC7.webp https://images-na.ssl-images-amazon.com/images/P/B0HCCLGBC7.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0HCCLGBC7.jpg
+kdp-B0H8NJZNF3.webp https://images-na.ssl-images-amazon.com/images/P/B0H8NJZNF3.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B0H8NJZNF3.jpg
+kdp-B08H8GGZ54.webp https://images-na.ssl-images-amazon.com/images/P/B08H8GGZ54.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08H8GGZ54.jpg
+kdp-1631730150.webp https://images-na.ssl-images-amazon.com/images/P/1631730150.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/1631730150.jpg
+kdp-B08F9CQ5Q4.webp https://images-na.ssl-images-amazon.com/images/P/B08F9CQ5Q4.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08F9CQ5Q4.jpg
+kdp-B08F82Z8KH.webp https://images-na.ssl-images-amazon.com/images/P/B08F82Z8KH.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08F82Z8KH.jpg
+kdp-B08F9ZZ3XH.webp https://images-na.ssl-images-amazon.com/images/P/B08F9ZZ3XH.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08F9ZZ3XH.jpg
+kdp-B08F8VPCHK.webp https://images-na.ssl-images-amazon.com/images/P/B08F8VPCHK.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08F8VPCHK.jpg
+kdp-B08F8LQ611.webp https://images-na.ssl-images-amazon.com/images/P/B08F8LQ611.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08F8LQ611.jpg
+kdp-B08F81K6DY.webp https://images-na.ssl-images-amazon.com/images/P/B08F81K6DY.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08F81K6DY.jpg
+kdp-B08F6J5KHP.webp https://images-na.ssl-images-amazon.com/images/P/B08F6J5KHP.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08F6J5KHP.jpg
+kdp-B08DYDQJPJ.webp https://images-na.ssl-images-amazon.com/images/P/B08DYDQJPJ.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08DYDQJPJ.jpg
+kdp-B08F6PJHVH.webp https://images-na.ssl-images-amazon.com/images/P/B08F6PJHVH.01._SCLZZZZZZZ_SX500_.jpg|https://images-na.ssl-images-amazon.com/images/P/B08F6PJHVH.jpg
