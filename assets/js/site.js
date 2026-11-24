@@ -326,6 +326,7 @@ DC.register('Team', (function(){ class Component extends DCLogic {
         ['Rev. Stephen Anning', 'General Overseer, Office of the Founder'],
         ['Rabbi Divine Dove', 'Chairman, Ecclesiastical Board'],
         ['Bishop Esy Oluwafemi', 'IMAC Global Women Director'],
+        ['Bishop Christabell', ''],
         ['Rev. Ruth Mutanda', 'Secretary General'],
         ['Rev. Richard Hawkins', 'Global Vice President, Standard and Report Director'],
         ['Bishop Elect Wemimo Babasola', 'Liaison Director'],
